@@ -1,0 +1,28 @@
+{
+  "extends": "@electron-toolkit/tsconfig/tsconfig.web.json",
+  "include": [
+    "types/**/*",
+    "src/views/**/*",
+    "src/views/**/*.tsx",
+    "src/*.ts",
+    "src/*.d.ts"
+  ],
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "jsx": "react-jsx",
+    "strict": true,
+    "baseUrl": "",
+    "paths": {
+      "core-js/es6/*": [
+        "./node_modules/core-js/es/*"
+      ]
+    }
+  },
+}
